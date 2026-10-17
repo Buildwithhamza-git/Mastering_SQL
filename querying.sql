@@ -20,3 +20,18 @@
 --         FROM projects
 --         WHERE marks >= 85
 --     )
+
+
+
+-- SELECT student_id, SUM(score) , COUNT(*) as attempts
+-- FROM exam_scores as e
+-- GROUP BY student_id
+
+-- SELECT total_stats.student_id , s.name, s.branch , total_stats.attempts
+-- FROM (
+--     SELECT student_id, SUM(score) , COUNT(*) as attempts
+-- FROM exam_scores as e
+-- GROUP BY student_id
+-- ) as total_stats
+-- INNER JOIN students as s 
+--     ON s.student_id =  total_stats.student_id
