@@ -12,3 +12,4 @@ FROM exam_scores as e
 WHERE e.score > Avgs.avgscore
 
 
+
