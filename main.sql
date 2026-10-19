@@ -1,4 +1,4 @@
-SELECT * FROM student
+SELECT * FROM students
 
 -- CREATE TABLE students (
 --     student_id SERIAL PRIMARY KEY,
